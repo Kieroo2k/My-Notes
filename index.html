@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/615f19370b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1><i class="fas fa-sticky-note"></i> My Notes</h1>
+
+        <div class="menu-buttons">
+            <button class="add icon"><i class="fas fa-plus"></i> Add</button>
+            <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Delete all</button>
+        </div>
+    </div>
+
+    <div class="note-area">
+
+    </div>
+
+    <div class="note-panel">
+        <h2>Add note</h2>
+        <label for="category">Select category</label>
+        <select id="category" onchange="selectValue()">
+            <option value="0" disabled selected>- select category -</option>
+            <option value="1">Shopping</option>
+            <option value="1">Work</option>
+            <option value="1">Other</option>
+        </select>
+
+        <label for="text">Add content</label>
+        <textarea id="text"></textarea>
+
+        <p class="error">Fill all labels</p>
+
+        <div class="panel-buttons">
+            <button class="save icon"><i class="fas fa-save"></i></button>
+            <button class="cancel icon"><i class="far fa-window-close"></i></button>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
